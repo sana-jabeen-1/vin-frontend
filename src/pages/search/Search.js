@@ -5,17 +5,19 @@ import { Grid } from "@material-ui/core";
 import useStyles from "./styles";
 
 // components
-import PageTitle from "../../components/PageTitle";
-import Widget from "../../components/Widget";
-import { Typography } from "../../components/Wrappers";
+import PageTitle from "../../components/PageTitle/PageTitle";
+import Widget from "../../components/Widget/Widget";
+import { Typography } from "../../components/Wrappers/Wrappers";
+import VehicleHistoryReport from "../../components/vehince-history-report";
 
 export default function TypographyPage() {
   var classes = useStyles();
 
   return (
     <>
-      <PageTitle title="Typography" />
-      <Grid container spacing={4}>
+      <PageTitle title="Search" />
+      <VehicleHistoryReport />
+      {/* <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Widget title="Headings" disableWidgetMenu>
             <div className={classes.dashedBorder}>
@@ -120,7 +122,7 @@ export default function TypographyPage() {
             </div>
           </Widget>
         </Grid>
-      </Grid>
+      </Grid> */}
     </>
   );
 }

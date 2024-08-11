@@ -1,0 +1,284 @@
+/* VehicleHistoryReport.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-bai {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-secondary {
+  color: #666666; /* Secondary text color */
+}
+
+.text-primary {
+  color: #0066CC; /* Primary text color */
+}
+
+.bg-primary {
+  background-color: #0066CC; /* Primary background color */
+}
+
+.bg-secondary {
+  background-color: #F5F5F5; /* Secondary background color */
+}
+
+.linear-gradient {
+  background: linear-gradient(270deg, #C4C4C4 1.24%, #EFEFEF 52.68%, #EFEFEF 100%);
+}
+
+.title-lg {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.scroll-bar-x {
+  overflow-x: scroll;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  max-width: 300px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.overflow-x-scroll {
+  overflow-x: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.bg-gray-300 {
+  background-color: #e2e8f0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.active\:opacity-90:active {
+  opacity: 0.9;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.cards-area{
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}

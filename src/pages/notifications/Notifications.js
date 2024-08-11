@@ -15,6 +15,7 @@ import Widget from "../../components/Widget/Widget";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import Notification from "../../components/Notification";
 import { Typography, Button } from "../../components/Wrappers/Wrappers";
+import VinDecode from "../../components/vin-decoder";
 
 const positions = [
   toast.POSITION.TOP_LEFT,
@@ -34,8 +35,9 @@ export default function NotificationsPage(props) {
 
   return (
     <>
-      <PageTitle title="Notifications" />
-      <Grid container spacing={4}>
+      <PageTitle title="Vin Decode" />
+      <VinDecode />
+      {/* <Grid container spacing={4}>
         <ToastContainer
           className={classes.toastsContainer}
           closeButton={
@@ -308,7 +310,7 @@ export default function NotificationsPage(props) {
             />
           </Widget>
         </Grid>
-      </Grid>
+      </Grid> */}
     </>
   );
 

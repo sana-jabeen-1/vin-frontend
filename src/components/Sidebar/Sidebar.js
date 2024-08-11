@@ -3,13 +3,14 @@ import { Drawer, IconButton, List } from "@material-ui/core";
 import {
   Home as HomeIcon,
   NotificationsNone as NotificationsIcon,
-  FormatSize as TypographyIcon,
   FilterNone as UIElementsIcon,
   BorderAll as TableIcon,
   QuestionAnswer as SupportIcon,
   LibraryBooks as LibraryIcon,
   HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
+  Search,
+  Settings,
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
@@ -33,16 +34,16 @@ const structure = [
   { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
   {
     id: 1,
-    label: "Typography",
-    link: "/app/typography",
-    icon: <TypographyIcon />,
+    label: "Search",
+    link: "/app/search",
+    icon: <Search />,
   },
   { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
   {
     id: 3,
-    label: "Notifications",
-    link: "/app/notifications",
-    icon: <NotificationsIcon />,
+    label: "Decode",
+    link: "/app/decode",
+    icon: <Settings />,
   },
   {
     id: 4,
@@ -57,9 +58,24 @@ const structure = [
   },
   { id: 5, type: "divider" },
   { id: 6, type: "title", label: "HELP" },
-  { id: 7, label: "Library", link: "https://flatlogic.com/templates", icon: <LibraryIcon /> },
-  { id: 8, label: "Support", link: "https://flatlogic.com/forum", icon: <SupportIcon /> },
-  { id: 9, label: "FAQ", link: "https://flatlogic.com/forum", icon: <FAQIcon /> },
+  {
+    id: 7,
+    label: "Library",
+    link: "https://flatlogic.com/templates",
+    icon: <LibraryIcon />,
+  },
+  {
+    id: 8,
+    label: "Support",
+    link: "https://flatlogic.com/forum",
+    icon: <SupportIcon />,
+  },
+  {
+    id: 9,
+    label: "FAQ",
+    link: "https://flatlogic.com/forum",
+    icon: <FAQIcon />,
+  },
   { id: 10, type: "divider" },
   { id: 11, type: "title", label: "PROJECTS" },
   {
@@ -93,7 +109,7 @@ function Sidebar({ location }) {
   // local
   var [isPermanent, setPermanent] = useState(true);
 
-  useEffect(function() {
+  useEffect(function () {
     window.addEventListener("resize", handleWindowWidthChange);
     handleWindowWidthChange();
     return function cleanup() {
@@ -127,7 +143,7 @@ function Sidebar({ location }) {
         </IconButton>
       </div>
       <List className={classes.sidebarList}>
-        {structure.map(link => (
+        {structure.map((link) => (
           <SidebarLink
             key={link.id}
             location={location}
